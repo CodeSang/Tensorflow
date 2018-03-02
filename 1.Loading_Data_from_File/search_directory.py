@@ -15,15 +15,17 @@ def search(dirname):
     return x_label,y_label
 
 
-x, y = search("../0.Image_Data/1.TrainImage")
+if __name__ == "__main__" :
 
-f = open('output.csv', 'w', encoding='utf-8', newline='')
-wr = csv.writer(f)
+    x, y = search("../0.Image_Data/1.TrainImage")
 
-for i in range(len(x)):
-    print(y[i])
-    wr.writerow([x[i], y[i]])
+    f = open('output.csv', 'w', encoding='utf-8', newline='')
+    wr = csv.writer(f)
 
-f.close()
+    for i in range(len(x)):
+        print(y[i])
+        wr.writerow([x[i], y[i]])
+
+    f.close()
 
 
