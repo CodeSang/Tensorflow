@@ -1,17 +1,40 @@
 ﻿# Tensorflow
 
-study 
+study Tensorflow & using Model
 
-### 0.Image Data
+python 3.5.4
+tensorflow 1.4.0
 
-�Ŷ�� ��� 0~359 ������ ����.
+[참조]
+https://github.com/tensorflow/models/tree/master/research/slim
 
-### 1.Loading_Data
 
-Using Queue Runner Example.
+### 0.rawdata
 
-'https://tensorflowkorea.gitbooks.io/tensorflow-kr/content/g3doc/how_tos/threading_and_queues/'
-'https://www.youtube.com/watch?v=o2q4QNnoShY&index=10&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm'
+    dataset/
+        
+        images/
+            class-1/
+            class-2/
+            class-3/
+
+    Data Dir.
+
+### 1.Loading_Datasets
+
+Read (Image & Label)  make TFRecord File. 
+
+    convert_Data.py     # make TFRecord
+    TFRecord_Read.py    # Read TFRecord Test
+
+TFRecord  makes easy to use Image File.    
+
+### 2.Training models
+
+
+
+
+
 ----------------------------------
 SangYub.Ji@Gmail.com
 
