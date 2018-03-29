@@ -6,9 +6,9 @@ import tensorflow.contrib.slim.nets as nets
 from utils.dataset_utils import load_batch
 from datasets import tf_record_dataset
 
+tf.logging.set_verbosity(tf.logging.INFO)
 
 FLAGS = tf.app.flags.FLAGS
-
 tf.app.flags.DEFINE_string(
     'dataset_name',
     None,
@@ -55,7 +55,8 @@ def run():
 
     inception = nets.inception
 
-    images, labels, _ = load_batch(dataset, height=inception.inception_v3.default_image_size, width=inception.inception_v3.default_image_size, num_classes = FLAGS.num_classes)
+    images, labels, _ = load_batch(dataset, height=inception.inception_v3.default_image_size,
+                                   width=inception.inception_v3.default_image_size, num_classes = FLAGS.num_classes)
 
     with slim.arg_scope(inception.inception_v3_arg_scope()):
         logits, end_points = inception.inception_v3(inputs=images, num_classes=FLAGS.num_classes)

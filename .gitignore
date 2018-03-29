@@ -1,3 +1,12 @@
 
 *.jpg
 *.tfrecord
+*.index
+*.data-00000-of-00001
+*.meta
+log/graph.pbtxt
+*.DESKTOP-SANG
+log/checkpoint
+.idea/workspace.xml
+.idea/workspace.xml
+.idea/workspace.xml

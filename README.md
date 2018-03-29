@@ -19,6 +19,9 @@ https://github.com/tensorflow/models/tree/master/research/slim
             class-3/
 
     Data Dir.
+    
+    down_flower.py [example]
+   
 
 ### 1.Loading_Datasets
 
@@ -31,6 +34,9 @@ TFRecord  makes easy to use Image File.
 
 ### 2.Training models
 
+    Train.py
+    
+### 3.eval model
 
 
 
