@@ -34,11 +34,12 @@ TFRecord  makes easy to use Image File.
 
 ### 2.Training models
 
-    Train.py
+    Train.py # Change Model Defalut Inception_V3
     
 ### 3.eval model
 
-
+    Eval.py # Can Check predict 
+    
 
 
 ----------------------------------

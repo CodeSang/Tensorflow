@@ -83,9 +83,8 @@ def run():
 
                 tempimage, tflabel = sess.run([predictions,targets], feed_dict={X_image:np_image,Y_label:np_label})
 
-                print(tempimage)
-                print(tflabel)
-
+                print("Predict : " , tempimage)
+                print("Answer  : ",  tflabel)
                 print( 'enter' )
 
 
